@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nature Blog- Explore the nature deeply</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar bg-dark navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Nature Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              topics </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Nature</a></li>
+              <li><a class="dropdown-item" href="#">Jungle Hills & Ocean</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Broad varities of nature images</a></li>
+            </ul>
+
+            <li class="nav-item">
+              <a class="nav-link " href="contact.html">Contact us</a>
+            </li>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+
+        <button class="btn btn-outline-light mx-2" data-bs-toggle="modal" data-bs-target="#loginModal" type="submit">Login</button>
+
+        <button class="btn btn-outline-light " data-bs-toggle="modal" data-bs-target="#singupModal" type="submit">Sing up</button>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!--  login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login to Nature Blog</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+         
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  
+  <!--  SingUp Modal -->
+  <div class="modal fade" id="singupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signupModalLabel">Get an account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+
+
+
+        <div class="modal-body">
+          <form>
+            
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+           
+            <button type="submit" class="btn btn-primary">Create account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Carusel -->
+
+  <div class="container my-4">
+
+    <div id="carouselExampleIndicators" class="carousel slide  ">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/c11.jpg" class="d-block w-100" width="500" height="550" alt="...">
+        </div>
+        <div class="carousel-item active">
+          <img src="img/c4.jpg" class="d-block w-100" width="500" height="550" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/c33.jpg" class="d-block w-100" width="500" height="550" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+     <!-- Cards -->
+
+
+
+  <div class="container">
+    <div class="card-group ">
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Nature"> <img src="https://source.unsplash.com/600x600/?nature" class="card-img-top" alt="Nature image"></a>
+        <div class="card-body">
+          <h5 class="card-title">Nature</h5>
+          <p class="card-text">Nature, in the broadest sense, is the physical world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general..</p>
+          <p class="card-text"><small class="text-muted">Last updated few minute ago</small></p>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Ocean"> <img src="https://source.unsplash.com/600x600/?ocean" class="card-img-top" alt="Ocean image"></a>
+        <div class="card-body">
+          <h5 class="card-title">Ocean</h5>
+          <p class="card-text">The ocean covers more than 70 percent of the earth's surface. About 94 percent of the earth's wildlife is found in the ocean. More than 70 percent of the earth's oxygen is produced by the ocean. Five percent of the land belonging to the United States is surrounded by the ocean.</p>
+          <p class="card-text"><small class="text-muted">Last updated few minute ago</small></p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Hill"> <img src="https://source.unsplash.com/600x600/?nature,Hills" class="card-img-top" alt="Hill image"> </a>
+        <div class="card-body">
+          <h5 class="card-title">Hills</h5>
+          <p class="card-text">Hills are easier to climb than mountains. They are less steep and not as high. But, like a mountain, a hill will usually have an obvious summit, which is its highest point. According to the U.S. Geological Survey, there is no official difference between hills and mountains.</p>
+          <p class="card-text"><small class="text-muted">Last updated  few minute ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Card 2 -->
+
+
+  <div class="container my-4">
+    <div class="card-group ">
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Glacier"> <img src="https://source.unsplash.com/600x600/?glacier" class="card-img-top" alt="Nature image"></a>
+        <div class="card-body">
+          <h5 class="card-title">Glacier</h5>
+          <p class="card-text">A glacier is a persistent body of dense ice that is constantly moving under its own weight. A glacier forms where the accumulation of snow exceeds its ablation over many years, often centuries.</p>
+          <p class="card-text"><small class="text-muted">Last updated few minute ago</small></p>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Forest"> <img src="https://source.unsplash.com/600x600/?forest" class="card-img-top" alt="Ocean image"></a>
+        <div class="card-body">
+          <h5 class="card-title">Forest</h5>
+          <p class="card-text">A forest is an area of land dominated by trees.[1] Hundreds of definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing, and ecological function.</p>
+          <p class="card-text"><small class="text-muted">Last updated few minute ago</small></p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Grassland"> <img src="https://source.unsplash.com/600x600/?Grasslands" class="card-img-top" alt="Hill image"> </a>
+        <div class="card-body">
+          <h5 class="card-title">Grasslands</h5>
+          <p class="card-text">A grassland is an area where the vegetation is dominated by grasses (Poaceae). However, sedge (Cyperaceae) and rush (Juncaceae) can also be found along with variable proportions of legumes, like clover, and other herbs. </p>
+          <p class="card-text"><small class="text-muted">Last updated  few minute ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="py-3 my-4  bg-dark" data-bs-theme="dark">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2022 Company, Inc</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
